@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    html{
+        background-color: aqua;
+    }
+    button{
+        background-color:bisque;
+    }
+    </style>
+  <title>User Input </title>
+</head>
+<body>
+    <H1 id="h1">Welcome Buddy</H1>
+    <label>USERNAME</label>
+    <input type="text" id="input">
+    <br>
+    <button onclick="firstMethod()">SAVE</button>
+
+    
+ 
+  <script>
+  //  let username = window.prompt("Enter your name");
+  //  console.log(`Welcome user ${username}`);
+    function firstMethod(){
+        let username = document.getElementById("input").value;
+        document.getElementById("h1").textContent = `Welcome ${username}`;
+        console.log("hello bhai hogaya run " + username);
+    }
+
+
+  </script>
+
+</body>
+</html>
